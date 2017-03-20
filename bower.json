@@ -1,0 +1,21 @@
+{
+  "name": "wabtvwait",
+  "description": "WAB TV Website Waiting",
+  "version": "1.0.0",
+  "homepage": "https://github.com/Yehzuna/wabtv",
+  "authors": [
+    "Thomas BORUSZEWSKI <yehzuna@outlook.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.2.1",
+    "jquery.countdown": "^2.2.0"
+  }
+}

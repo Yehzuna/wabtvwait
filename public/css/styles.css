@@ -1,0 +1,98 @@
+@font-face {
+    font-family: "gothambold";
+    src: url('../fonts/gothambold1.eot?1489965270') format('embedded-opentype'), url('../fonts/gothambold1.ttf?1489965270') format('truetype'), url('../fonts/gothambold1.woff?1489965270') format('woff');
+}
+@font-face {
+    font-family: "gothamlight";
+    src: url('../fonts/gothamlight.eot?1489965270') format('embedded-opentype'), url('../fonts/gothamlight.ttf?1489965270') format('truetype'), url('../fonts/gothamlight.woff?1489965270') format('woff');
+}
+
+
+
+body {
+    background: #efeef1;
+    color: #d5a940;
+    font-family: 'gothamlight', sans-serif;
+    text-align: center;
+    position: relative;
+}
+
+img {
+    max-width: 300px;
+}
+
+.countdown {
+    border-top: 3px solid #d5a940;
+    border-bottom: 3px solid #d5a940;
+    margin: 20px;
+    padding: 30px 0;
+    font-size: 2.5em;
+    font-weight: 400;
+    font-family: 'gothambold', sans-serif;
+}
+.text .title {
+    margin-bottom: 10px;
+    font-size: 1.8em;
+    font-weight: 400;
+    font-family: 'gothambold', sans-serif;
+    text-transform: uppercase;
+}
+.text .date {
+    margin-bottom: 10px;
+    font-size: 1.2em;
+    font-weight: 400;
+    font-family: 'gothamlight', sans-serif;
+}
+.text .hour {
+    position: relative;
+    padding: 0 40px;
+    display: inline-block;
+    font-size: 1.2em;
+    font-weight: 400;
+    font-family: 'gothamlight', sans-serif;
+}
+.text .hour span  {
+    display: inline-block;
+    padding: 0 10px;
+    background: #efeef1;
+}
+.text .hour:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    z-index: -1;
+    display: block;
+    height: 1px;
+    width: 100%;
+    background: #d5a940;
+}
+
+@media only screen and (min-width: 801px) {
+    body,
+    html{
+        height: 100%;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    .container {
+        position: absolute;
+        top: 50%;
+        height: 600px;
+        width: 100%;
+        margin-top: -300px;
+    }
+    .countdown {
+        font-size: 5em;
+    }
+    .text .title {
+        font-size: 4em;
+    }
+    .text .date {
+        font-size: 3em;
+    }
+    .text .hour {
+        font-size: 2.5em;
+    }
+}

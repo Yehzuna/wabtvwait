@@ -1,0 +1,15 @@
+Options -MultiViews
+Options -Indexes
+Options +FollowSymLinks
+RewriteEngine On 
+RewriteBase /
+
+RewriteRule index\.html$ /index.php?page=/ [L,QSA]
+RewriteRule ([a-zA-Z0-9-]*)/([a-zA-Z0-9-]*\.html)$ %{ENV:REWRITEBASE}/index.php?page=$2&folder=modules/$1 [L,QSA]
+RewriteRule ([a-zA-Z0-9-]*\.html)$ %{ENV:REWRITEBASE}/index.php?page=$1 [L,QSA]
+
+<IfModule mod_headers.c>
+  <FilesMatch "\.(ttf|ttc|otf|eot|woff|woff2|font.css|css|js)$">
+    Header set Access-Control-Allow-Origin "*"
+  </FilesMatch>
+</IfModule>

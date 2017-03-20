@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>We Are Bob Télévision</title>
+    <meta name="description" content="BobLeGob, ShoutCaster De Saveurs">
+    <base href="/wait/">
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+
+<div class="container">
+    <img src="img/logo.png" alt="We Are Bob Télévision" />
+    <div class="countdown">H- 00J 00H 00M</div>
+    <div class="text">
+        <div class="title">Inauguration</div>
+        <div class="date">Samedi 25 Mars</div>
+        <div class="hour"><span>20H</span></div>
+    </div>
+</div>
+
+<script src="./bower_components/jquery/dist/jquery.min.js"></script>
+<script src="./bower_components/jquery.countdown/dist/jquery.countdown.min.js"></script>
+<script type="text/javascript">
+    $(".countdown").countdown("2017/03/25 20:00:00", function(event) {
+        $(this).text(
+            event.strftime('H- %DJ %HH %MM %SS')
+        );
+    });
+</script>
+</body>
+</html>
