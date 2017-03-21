@@ -17,7 +17,19 @@ body {
     position: relative;
 }
 
-img {
+
+
+.partners .partner {
+    display: inline-block;
+    margin: 10px;
+}
+.partners .partner img {
+    display: block;
+    height: 50px;
+    filter: grayscale(100%) brightness(70%) contrast(110%);
+}
+
+.logo {
     max-width: 300px;
 }
 
@@ -46,6 +58,7 @@ img {
 .text .hour {
     position: relative;
     padding: 0 40px;
+    margin-bottom: 10px;
     display: inline-block;
     font-size: 1.2em;
     font-weight: 400;
@@ -79,9 +92,9 @@ img {
     .container {
         position: absolute;
         top: 50%;
-        height: 600px;
+        height: 660px;
         width: 100%;
-        margin-top: -300px;
+        margin-top: -330px;
     }
     .countdown {
         font-size: 5em;
